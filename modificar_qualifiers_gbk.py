@@ -46,4 +46,6 @@ for feature in gbk.features:
         if feature.qualifiers.get('locus_tag') in lista_interes:
             feature.qualifiers['colour']=' '.join(map(str,colores.pop(0)))
 
-#imprime el gbk modificado
+#imprime el gbk modificad
+print gbk.format("gb")
+
